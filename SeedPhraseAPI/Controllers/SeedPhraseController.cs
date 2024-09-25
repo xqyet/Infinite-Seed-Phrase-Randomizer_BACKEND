@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using NBitcoin;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -9,18 +10,43 @@ namespace SeedPhraseAPI.Controllers
     [ApiController]
     public class SeedPhraseController : ControllerBase
     {
-        // Updated seed phrase with 11 known words, last word unknown
-        private static string[] knownWords = { "world", "subway", "wagon", "vacant", "lunar", "inmate", "vendor", "just", "equal", "canal", "swing" };
-
-        // BIP-39 word list for the last word
+        // BIP-39 word list for generating random seed phrases
         private static string[] bip39Words = Wordlist.English.GetWords().ToArray();
 
-        // GET api/SeedPhrase/All
-        [HttpGet("All")]
-        public ActionResult<IEnumerable<string>> GetAllSeedPhrases()
+        // GET api/SeedPhrase/Random/{count}
+        [HttpGet("Random/{count?}")]
+        public ActionResult<IEnumerable<string>> GetRandomSeedPhrases(int count = 2000) // Default count set to 400
         {
-            // Generate all possible seed phrases with the 12th word coming from BIP-39 word list
-            var seedPhrases = bip39Words.Select(word => string.Join(" ", knownWords.Concat(new[] { word })));
+            var seedPhrases = new List<string>();
+            var random = new Random();
+
+            for (int i = 0; i < count; i++)
+            {
+                var selectedWords = new List<string>();
+                var letterCount = new Dictionary<char, int>();
+
+                while (selectedWords.Count < 12)
+                {
+                    var word = bip39Words[random.Next(bip39Words.Length)];
+                    char firstLetter = word[0];
+
+                    if (!letterCount.ContainsKey(firstLetter))
+                    {
+                        letterCount[firstLetter] = 0;
+                    }
+
+                    // Allow no more than 3 words starting with the same letter
+                    if (letterCount[firstLetter] < 3)
+                    {
+                        letterCount[firstLetter]++;
+                        selectedWords.Add(word);
+                    }
+                }
+
+                var seedPhrase = string.Join(" ", selectedWords);
+                seedPhrases.Add(seedPhrase);
+            }
+
             return Ok(seedPhrases);
         }
     }
