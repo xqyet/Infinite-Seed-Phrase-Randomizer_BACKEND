@@ -3,6 +3,8 @@
 ### Overview:
 This project is an infinite seed-phrase generator and checker for blockchain wallets using the MetaMask API. It continuously generates random 12-word BIP-39 seed phrases, validates them, and checks for wallet balances on Ethereum and Binance Smart Chain. If a valid seed phrase is found, the details are saved to a JSON file, and the top of the webpage will be updated. You have about a 100 trillion quadrillion chance of finding a wallet actually being used with real money inside! Preferably models like this can be used to recover funds for users that have partial memory of what their seed-phrase was. Large overhauls to the code may be needed depending on the scenario of course!
 
+[front-end repo](https://github.com/xqyet/Infinite-Seed-Phrase-Randomizer_FRONTEND)
+
 ### What it do:
 - **Infinite Seed-Phrase Generation**: Continuously generates random seed phrases.
 - **Validation**: Validates each seed phrase using `ethers.js`.
