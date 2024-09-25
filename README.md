@@ -53,6 +53,10 @@ This project is an infinite seed-phrase generator and checker for blockchain wal
 2. The app checks each phrase and displays results in real-time.
 3. If a matching seed phrase with a balance is found, it is saved as a JSON file in the browser. The red message at the top of the web-page will also update to a bright green "seed-phrase found".
 
+## Demo
+
+[![YouTube Video](https://img.youtube.com/vi/mfBrknz_2-w/0.jpg)](https://www.youtube.com/watch?v=mfBrknz_2-w)
+
 
 ### Disclaimer:
 
