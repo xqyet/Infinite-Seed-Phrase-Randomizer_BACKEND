@@ -51,7 +51,7 @@ This project is an infinite seed-phrase generator and checker for blockchain wal
 
 1. Press **Check Wallet** to start checking random seed phrases.
 2. The app checks each phrase and displays results in real-time.
-3. If a matching seed phrase with a balance is found, it is saved as a JSON file in the browser.
+3. If a matching seed phrase with a balance is found, it is saved as a JSON file in the browser. The red message at the top of the web-page will also update to a bright green "seed-phrase found".
 
 
 ### Disclaimer:
