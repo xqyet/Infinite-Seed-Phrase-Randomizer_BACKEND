@@ -56,7 +56,7 @@ This project is an infinite seed-phrase generator and checker for blockchain wal
 
 ### Disclaimer:
 
-This was just a fun project I made using many of the same techniques used to recover soft-wallets that have partial seed-phrase recovery. If you are interested in my front-end framework just reach out to me! Otherwise you can make your own front-end (webpage or console, doesn't matter) it's open source so fork and do whatever you want, but please don't abuse it for bad stuff.
+This was just a fun project I made using many of the same techniques used to recover soft-wallets that have partial seed-phrase recovery. If you are interested in my front-end framework, I linked to it above! However you'd probably like to make your own front-end (webpage or console based, doesn't matter) it's open source so fork and do whatever you want, but please don't abuse it for bad stuff.
   
 
 
