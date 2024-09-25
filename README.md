@@ -13,7 +13,7 @@ This project is an infinite seed-phrase generator and checker for blockchain wal
 - **Web-page**: Displays current status of phrase checking, including errors and matches.
   
 ![Seed-Phrase-Radnomizer](SeedPhraseAPI/seedfindernew.png)
-(in the above example it is generating around 2000 seed-phrases/s, extending the page downward infinitely for visualization)
+
 ### What it use:
 - **MetaMask API**: For wallet interactions.
 - **Ethers.js**: For seed phrase validation and wallet generation.
