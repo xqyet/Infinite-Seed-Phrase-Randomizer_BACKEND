@@ -45,7 +45,7 @@ This project is an infinite seed-phrase generator and checker for blockchain wal
 ### Run the backend API:
 
 1. Make sure your backend is running at `http://localhost:5233`. for example
-2. run `http-server .` your console to see the webpage.
+2. run `http-server .` in your console to see the webpage.
 
 ### How it works:
 
