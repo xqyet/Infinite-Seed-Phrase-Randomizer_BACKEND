@@ -22,7 +22,7 @@ This project is an infinite seed-phrase generator and checker for blockchain wal
 - **BitcoinJS**: For Bitcoin integration.
 - **ASP.NET Core API**: Backend API for generating seed phrases.
 
-*example of wallet with funds being found (it's my own wallet using a limited search) *also yes I know you could use my own program to find my wallet address in 30 years :p
+*example of wallet with funds being found (it's my own wallet using a limited search) *also yes I know you could use my own program to eventually find this wallet address :p
 
   <img src="SeedPhraseAPI/seedfound_gui.png" alt="example of wallet with funds being found (it's my own wallet using a limited search)" width="75%" />
   
