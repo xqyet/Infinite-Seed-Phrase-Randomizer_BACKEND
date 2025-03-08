@@ -12,7 +12,7 @@ This project is an infinite seed-phrase generator and checker for blockchain wal
 - **Auto-Save**: Saves matching seed phrases with non-zero balance to a JSON file.
 - **Web-page**: Displays current status of phrase checking, including errors and matches.
   
-![Seed-Phrase-Radnomizer](SeedPhraseAPI/seedfindernew.png)
+![Seed-Phrase-Radnomizer](SeedPhraseAPI/seedfindernew1.png)
 
 ### What it use:
 - **MetaMask API**: For wallet interactions.
